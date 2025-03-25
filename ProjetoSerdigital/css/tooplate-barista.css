@@ -457,10 +457,10 @@ body {
   border-radius: var(--border-radius-medium);
   content: "";
   position: absolute;
-  top: 55%;
+  top: 54%;
   left: 50%;
   transform: translate(-55%, -50%) rotate(45deg);
-  width: 250px;
+  width: 260px;
   height: 350px;
   pointer-events: none;
 }
@@ -607,11 +607,31 @@ body {
   background-size: cover;
 }
 
-.menu-block-wrap {
-  background: rgba(0, 0, 0, 0.65);
+
+.menu-block-wrap,
+.card {
+  background: rgba(0, 0, 0, 0.65) !important;
   border-radius: var(--border-radius-medium);
-  padding: 45px;
+  padding: 10px;
 }
+
+.card.border-light {
+  border-color: rgba(255, 255, 255, 0.35) !important;
+}
+
+/* Ajusta o botão do accordion */
+.card-header .btn {
+  background: none;
+  color: var(--white-color);
+  border: none;
+}
+
+
+.card-body {
+  background: rgba(0, 0, 0, 0.5);
+  color: var(--white-color);
+}
+
 
 .menu-block .border-top {
   border-top-color: rgba(255, 255, 255, 0.35) !important;
@@ -657,6 +677,7 @@ body {
   border-bottom: 10px solid transparent;
   border-right: 10px solid var(--primary-color);
 }
+
 
 
 /*---------------------------------------
@@ -1074,10 +1095,4 @@ body {
     top: 13px;
   }
 
-  /*---------------------------------------
-              Card              
------------------------------------------*/
-  .card .card-body {
-    padding: 20px;
-  }
 }
